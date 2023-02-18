@@ -9,6 +9,7 @@ import com.example.mvvmwithretrofit.model.Result
 
 class MovieListAdapter : RecyclerView.Adapter<MovieListAdapter.ViewHolder>() {
 
+    //List for movie
     private var movieList=ArrayList<Result>()
 
     fun setMovieList(movieList : List<Result>){
@@ -34,6 +35,7 @@ class MovieListAdapter : RecyclerView.Adapter<MovieListAdapter.ViewHolder>() {
 
     inner class ViewHolder(var binder : MovieItemBinding) : RecyclerView.ViewHolder(binder.root) {
 
+        //Binding data to view
         fun bind( movie : Result){
 
             Glide.with(binder.movieImage)
